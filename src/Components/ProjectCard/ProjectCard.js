@@ -13,10 +13,10 @@ function ProjectCard({ project }) {
         {/* for showing the visit link */}
         {!project.UnderMaintenance && (
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            Visit
+            <span>Visit</span>
           </a>
         )}
-        {project.pics?.map((pic) => (
+        {project.pics.map((pic) => (
           <img {...pic} key={pic.alt} />
         ))}
       </div>

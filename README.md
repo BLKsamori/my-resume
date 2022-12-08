@@ -4,4 +4,4 @@
 - about
 - contact me
 
-[My Resume Here ](https://blksamori.github.io/resumeBs/)
+[My Resume Here ](https://blksamori.github.io/my-resume/)
