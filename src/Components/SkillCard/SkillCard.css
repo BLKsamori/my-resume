@@ -1,0 +1,29 @@
+.SkillCard {
+  font-size: inherit;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1em;
+}
+
+.SkillCard h5 {
+  font-size: 0.8em;
+}
+
+.SkillCard > img {
+  width: 3em;
+  height: 3em;
+  border-radius: 0.3em;
+}
+
+/* #PrintView  */
+
+#PrintView .SkillCard {
+  display: list-item;
+  flex-direction: row;
+  padding-right: 3em;
+  padding-bottom: 1em;
+}
+#PrintView .SkillCard > img {
+  display: none;
+}

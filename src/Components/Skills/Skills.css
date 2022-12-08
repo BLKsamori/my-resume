@@ -1,0 +1,39 @@
+.Skills {
+  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Skills h2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.Skills .skillsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* #PrintView  */
+#PrintView .Skills {
+  align-items: flex-start;
+  height: auto;
+}
+#PrintView .skillsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  gap: 0em;
+  height: auto;
+
+  /* this padding is 4 the list bullets */
+  padding-left: 1em;
+  list-style: square;
+}

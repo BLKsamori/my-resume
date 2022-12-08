@@ -1,0 +1,68 @@
+.Welcome {
+  font-size: inherit;
+  pointer-events: none;
+}
+
+.Welcome h1 {
+  font-family: var(--font-welcome);
+  text-align: start;
+  align-self: flex-start;
+  word-break: normal;
+  line-height: 1.5em;
+}
+
+.Welcome h1 > span {
+  font-size: 2em;
+}
+/* name */
+.Welcome h1 > span > span {
+  font-size: 1.3em;
+  color: var(--col-name);
+}
+
+.Welcome h1 span:nth-child(3) {
+  font-size: 1.2em;
+}
+.Welcome p {
+  margin-top: 1em;
+  font-size: 0.95em;
+  text-align: start;
+  align-self: flex-start;
+}
+
+#PrintView .Welcome {
+  flex-basis: 70%;
+}
+
+#PrintView .Welcome h1 {
+  width: auto;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+#PrintView .Welcome h1 span {
+  font-size: 0.9em;
+}
+@media screen and (max-width: 767px) {
+  .Welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    width: auto;
+  }
+
+  .Welcome h1 {
+    font-size: 1.6em;
+  }
+
+  #PrintView .Welcome {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Welcome h1 {
+    font-size: 1.2em;
+  }
+}

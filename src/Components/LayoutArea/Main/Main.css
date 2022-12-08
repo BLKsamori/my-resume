@@ -1,0 +1,63 @@
+.Main {
+  height: 100vh;
+  /* scroll snap */
+  /* scroll-snap-type: y mandatory; */
+  overflow-y: scroll;
+
+  /* for the bg not to be pushed out of the screen */
+  overflow-x: hidden;
+}
+
+.Main > div {
+  position: relative;
+  /* scroll snap */
+
+  scroll-snap-align: start;
+  padding-top: 5em;
+}
+.Main > hr {
+  display: none;
+}
+.Main h2 {
+  font-family: var(--font-2);
+  pointer-events: none;
+}
+
+/* print */
+
+#PrintView .Main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  padding-top: 1em;
+}
+
+#PrintView .Main > div {
+  position: initial;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  padding: 0.1em;
+  padding-bottom: 1em;
+}
+#PrintView .Main > hr {
+  display: block;
+  height: 0.25em;
+  width: 100%;
+  background: var(--col-text-1);
+  margin: 0.5em 0;
+}
+#PrintView .Main h2 {
+  align-self: center;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 450px) {
+  #PrintView .Main {
+    width: 100%;
+  }
+  #PrintView .Main > div {
+    width: 100%;
+  }
+}

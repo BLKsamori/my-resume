@@ -1,0 +1,140 @@
+#PrintView .BgA {
+  display: none;
+}
+.BgA {
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: var(--bgA);
+}
+.BgA .RotateBgA {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* animation: rotate_bubbles_bg 30 s linear infinite; */
+}
+/* @keyframes rotate_bubbles_bg {
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+} */
+
+.bubbleWrapper {
+  position: relative;
+  animation: move_bubble 20s linear both infinite;
+}
+.bubble {
+  font-size: inherit;
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+@keyframes move_bubble {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.bubble::before,
+.bubble::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: bubble_butt 5s linear both infinite;
+  border: 0.5em solid var(--col-2);
+}
+
+.bubble::after {
+  border-color: var(--col-2);
+}
+.bubble::after {
+  animation-delay: 1.5s;
+}
+@keyframes bubble_butt {
+  0% {
+    transform: scale(30%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(90%);
+  }
+}
+.bubbleWrapper:nth-child(odd) {
+  animation-direction: reverse;
+}
+.bubbleWrapper:nth-child(1) {
+  left: 10%;
+  top: 80%;
+  font-size: 3em;
+  animation-delay: 0.5s;
+}
+.bubbleWrapper:nth-child(2) {
+  left: 50%;
+  top: 30%;
+  font-size: 0.4em;
+  animation-delay: 1s;
+}
+.bubbleWrapper:nth-child(3) {
+  left: 30%;
+  top: 60%;
+  font-size: 0.8em;
+  animation-delay: 1.5s;
+}
+.bubbleWrapper:nth-child(4) {
+  left: 0%;
+  top: 50%;
+  font-size: 0.2em;
+  animation-delay: 2s;
+}
+.bubbleWrapper:nth-child(5) {
+  left: 35%;
+  top: 0%;
+  font-size: 1.2em;
+  animation-delay: 2.5s;
+}
+.bubbleWrapper:nth-child(6) {
+  left: 75%;
+  top: 95%;
+  font-size: 1em;
+  animation-delay: 3s;
+}
+.bubbleWrapper:nth-child(7) {
+  left: 48%;
+  top: 32%;
+  font-size: 0.4em;
+  animation-delay: 3.5s;
+}
+.bubbleWrapper:nth-child(8) {
+  left: 25%;
+  top: 80%;
+  font-size: 2.2em;
+  animation-delay: 4s;
+}
+.bubbleWrapper:nth-child(9) {
+  left: 15%;
+  top: 72%;
+  font-size: 0.6em;
+  animation-delay: 4.5s;
+}

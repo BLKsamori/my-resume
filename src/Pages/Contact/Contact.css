@@ -1,0 +1,80 @@
+.Contact {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  padding-top: 3em;
+  gap: 1em;
+  color: var(--col-text-1);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  list-style: none;
+}
+
+.contactList > li {
+  font-size: 0.8em;
+  border-radius: 0.3em;
+  padding: 1em;
+  width: 7em;
+  height: 7em;
+  transition: 0.2s ease-in-out;
+}
+.contactList > li:hover {
+  transform: scale(1.1);
+}
+.contactList > li > a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.contactList img {
+  width: 4em;
+  height: 4em;
+  position: relative;
+}
+
+/* #PrintView */
+
+#PrintView .Contact {
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.1em;
+  gap: 1em;
+  text-align: center;
+}
+
+#PrintView .contactList {
+  justify-content: space-around;
+  padding: 0.1em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#PrintView .contactList > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+#PrintView .contactList > li > a {
+  gap: 1em;
+}
+
+#PrintView .contactList img {
+  width: 60%;
+  height: auto;
+}

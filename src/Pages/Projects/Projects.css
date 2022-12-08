@@ -1,0 +1,66 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  padding-top: 3em;
+  gap: 2em;
+  color: var(--col-text-1);
+}
+.Projects h2 {
+  text-align: start;
+  color: var(--col-text-1);
+}
+
+.allProjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .allProjects {
+    font-size: 0.9em;
+    position: relative;
+    gap: 2em;
+  }
+  /* #PrintView */
+  #PrintView .Projects,
+  #PrintView .allProjects {
+    gap: 0em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .allProjects {
+    font-size: 0.95em;
+    position: relative;
+  }
+}
+
+/* #PrintView */
+#PrintView .Projects,
+#PrintView .allProjects {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+#PrintView .allProjects {
+  padding: 0;
+  margin: 0;
+  display: list-item;
+  list-style: circle;
+  width: 100%;
+  gap: 1em;
+}
+
+#PrintView .Projects > h2 {
+  margin-bottom: 0;
+}

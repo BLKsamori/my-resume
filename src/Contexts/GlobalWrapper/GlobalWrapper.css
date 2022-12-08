@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+/* font-family: 'Poor Story', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+/* font-family: 'Oxygen', sans-serif; */
+
+:root {
+  /* fonts */
+  --font-1: "Oxygen", sans-serif;
+  --font-2: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* --font-btn: 'cursive'; */
+  --font-welcome: "Poor Story", cursive;
+}
+.GlobalWrapper {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-1);
+  --theme-duration: 0.4s;
+  background: var(--bgA);
+}
+#dark {
+  --col-1: #0f2537;
+  --col-2: #2f49bf;
+  --col-3: blue;
+  --col-text-1: white;
+  --col-text-2: black;
+  --filter-icon: invert(1);
+  --col-name: rgb(35, 186, 35);
+  --col-profile: linear-gradient(
+    190deg,
+    rgba(48, 73, 191, 1) 0%,
+    rgb(51, 27, 98) 100%
+  );
+  --profile-shadow: 0.1em 0.5em 0.3em 0.5em rgb(1, 15, 37);
+  --img-shadow: 0em -0.2em 0.3em 0em rgb(14, 36, 96);
+  --col-projects: linear-gradient(
+    90deg,
+    rgba(48, 73, 191, 1) 0%,
+    rgb(51, 27, 98) 100%
+  );
+
+  --bgA: #0e171f;
+  --bgB: var(--bgA);
+  --bgC: var(--bgA);
+  --bgD: var(--bgA);
+}
+
+#light {
+  --filter-icon: invert(0);
+  --col-1: #84c3d4;
+  --col-2: rgb(61, 82, 136);
+  --col-3: rgb(9, 25, 42);
+  --col-text-1: rgb(20, 51, 60);
+  --col-text-2: white;
+  --col-name: rgb(17, 71, 102);
+
+  --col-profile: linear-gradient(0deg, rgb(29, 29, 29) 0%, var(--col-2) 100%);
+  --profile-shadow: 0.1em 0.5em 0.8em 0.1em rgb(19, 90, 111);
+  --img-shadow: 0em -0.2em 0.3em 0em rgb(14, 36, 96);
+  --col-projects: linear-gradient(
+    250deg,
+    rgb(29, 29, 29) 0%,
+    var(--col-2) 100%
+  );
+
+  --bgA: #def2fa;
+  --bgB: var(--bgA);
+  --bgC: var(--bgA);
+  --bgD: var(--bgA);
+}
+
+/* PrintView */
+#PrintView {
+  --font-1: Arial, Helvetica, sans-serif;
+  --font-2: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-welcome: var(--font-1);
+  --col-text-1: black;
+  --col-text-2: white;
+  --filter-icon: invert(0);
+  --col-name: black;
+  --bgA: white;
+  --bgB: white;
+  --bgC: white;
+  --bgD: white;
+  --print-bg: #111920;
+}
+
+#PrintView.GlobalWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--print-bg);
+  font-size: 0.5rem;
+}
+@media screen and (max-width: 450px) {
+  #PrintView.GlobalWrapper {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,75 @@
+.PrintIcon {
+  font-size: 1em;
+  padding: 0.1em;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: var( --filter-icon);
+  align-items: center;
+  justify-content: center;
+}
+
+.PrintIconWrapper {
+  border: 0.1em solid ;
+  width: 1em;
+  height: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10%;
+  border-radius: 0;
+  color: var(--col-text-2);
+  margin-bottom: 0;
+}
+.PrintIconWrapper a {
+  width: 100%;
+  height: 100%;
+}
+
+
+.PrintIcon  p {
+  display: none;
+}
+
+
+.PrintIconWrapper:hover {
+  cursor: pointer;
+}
+
+.PrintIconWrapper > div {
+  background: var(--col-text-2);
+  height: 10%;
+  width: 100%;
+  
+}
+
+#PrintIcon {
+  display: none;
+}
+
+/* Light */
+#light .PrintIcon {
+  filter: invert()
+}
+
+/* #PrintView */
+
+#PrintView .PrintIconWrapper  {
+  background: var(--col-text-1);
+}
+
+#PrintView .PrintIconWrapper {
+  color: var(--col-text-1);
+}
+
+
+#PrintView .PrintIcon   p {
+  display: contents;
+  color: var(--col-text-1);
+  font-size: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}

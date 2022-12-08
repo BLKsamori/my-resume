@@ -1,0 +1,79 @@
+/* align the Layout div in the middle */
+
+.Layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.Layout header {
+  flex-basis: 100%;
+  height: 5%;
+  position: absolute;
+  z-index: 3;
+}
+.Layout main {
+  flex-basis: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.Layout footer {
+  flex-basis: 100%;
+  height: 5%;
+}
+
+#PrintView .Layout {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 40em;
+  min-width: 35em;
+  height: 97%;
+  padding: 1em;
+  margin: 1em;
+  border: 0.2rem solid var(--col-text-1);
+  position: fixed;
+  background: var(--col-text-2);
+  overflow-x: hidden;
+}
+#PrintView .Layout > header {
+  width: 100%;
+}
+
+#PrintView .Layout > main {
+  padding-top: 3em;
+  width: 100%;
+}
+
+#PrintView h1 {
+  font-size: 1.5em;
+}
+
+#PrintView h2 {
+  font-size: 1.1em;
+}
+#PrintView h3 {
+  font-size: 1em;
+}
+
+#PrintView p {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 767px) {
+  #PrintView .Layout {
+    width: 97vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  #PrintView .Layout {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+}

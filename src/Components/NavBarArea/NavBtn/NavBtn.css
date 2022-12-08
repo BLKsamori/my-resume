@@ -1,0 +1,13 @@
+.NavBtn {
+  font-size: inherit;
+  font-weight: bold;
+}
+.NavBtn:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--col-text-1);
+}
