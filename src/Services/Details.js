@@ -148,7 +148,7 @@ class Details {
       {
         id: 2,
         name: "LinkedIn",
-        link: "https://il.in.com/in/aviv-desta-dev",
+        link: "https://linkedin.com/in/aviv-desta-dev",
         pic: portfolioImgs.contact.LinkedIn,
       },
       {
